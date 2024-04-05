@@ -149,5 +149,43 @@ progress{
     margin-bottom: 20px;
   
 }
+#services{
+    padding: 100px 50px;
+}
+.services-row{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-wrap: wrap;
+}
+.service-box{
+    flex-basis: 25%;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: background-color 0.4s, color 0.4s;
 
+}
+.service-box:hover{
+    background-color: rgba(77, 86, 211, 0.849);
+    color: white;
+}
+.service-box img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+.service-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.service-box p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
 
