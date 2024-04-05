@@ -57,3 +57,53 @@ nav a:hover{
 .text p{
     font-size: 40px;
 }
+#About{
+    padding: 40px 50px;
+    border-radius: 10px;
+}
+.about-info{
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.about-info h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+.about-info p{
+    font-size: 1.5rem;
+    color: rgba(29, 188, 228, 0.8);
+    line-height: 1.6;
+}
+.about-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-left-col{
+    flex: 0 0 50%;
+    max-width: 45%;
+    margin-bottom: 20px;
+}
+
+.about-left-col img{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.about-right-col{
+    flex-basis: 50%;
+}
+.about-right-col p {
+    font-size: 1.2rem;
+    text-align: justify;
+    color: #555;
+    line-height: 1.6;
+}
+#p-title{
+    font-size: 20px;
+    font-weight: bold;
+}
