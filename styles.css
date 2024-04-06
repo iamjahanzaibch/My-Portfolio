@@ -31,6 +31,29 @@ nav{
     padding-left: 50px;
     letter-spacing: 5px;
 }
+.Logo span{
+    color: rgba(10, 241, 241, 0.925)
+}
+
+.C-btn {
+    background: linear-gradient(45deg, #4CAF50, #2196F3);
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.C-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+
 nav a{
     text-decoration: none;
     color: rgb(238, 233, 231);
