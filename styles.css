@@ -15,6 +15,7 @@ header{
     background-position: right,center;
     background-repeat: no-repeat, no-repeat;
     
+    
 }
 nav{
     width: 100%;
@@ -188,4 +189,54 @@ progress{
     line-height: 1.5;
     margin-bottom: 20px;
 }
+#contact{
+    padding: 100px 50px;
+    background: linear-gradient(160deg, rgb(149, 161, 161) 45%, white 0%);
+}
+.contact-info-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contact-left-col{
+    flex-basis: 50%;
+    padding-right: 20px;
+}
+.contact-right-col{
+    flex-basis: 50%;
+    padding-left: 20px;
+}
+.contact-right-col form{
+    text-align: center;
+}
+#contact h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333; 
+}
+.contact-right-col form input[type="text"],
+.contact-right-col form input[type="email"],
+.contact-right-col form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact-right-col form textarea {
+    height: 120px;
+}
+.contact-right-col form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
 
+.contact-right-col form input[type="submit"]:hover {
+    background-color: #46f312;
+}
