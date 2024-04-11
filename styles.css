@@ -34,11 +34,27 @@ nav{
 .Logo span{
     color: rgba(10, 241, 241, 0.925)
 }
+.menue a{
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.menue a:hover{
+    background: aqua;
+    transition: 0.4s;
+}
+.menue{
+    padding-right: 100px;
+}
 
 .C-btn {
     background: linear-gradient(45deg, #4CAF50, #2196F3);
     color: #fff;
-    padding: 12px 24px;
+    margin-top: 30px;
+    padding: 15px 24px;
     font-size: 18px;
     border: none;
     border-radius: 10px;
@@ -51,6 +67,10 @@ nav{
 .C-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+.C-btn a {
+    color: inherit;
+    text-decoration: none;
 }
 
 
@@ -288,3 +308,100 @@ footer {
 .social-icons img:hover {
     transform: scale(1.2);
 }
+#element{
+    font-size: 30px;
+    color: aqua;
+}
+#element1{
+    font-size: 30px;
+    color: aqua;}
+#sidenav{
+    display: none;}
+    @media  only screen  and (max-width:768px){
+        header{
+             background: url('bg1.webp');
+             background-size: cover;
+        }
+        #sidenav{
+            position: fixed;
+            top: 0;
+            right: 0;
+            width:0px;
+            height: 100vh;
+            background: rgba(0,0,0,0.8);
+            padding: 100px 0px;
+            transition: 0.4s;
+            display: block;
+        }
+        #sidenav a{
+            text-decoration: none;
+            color: hwb(180 18% 42%);
+            font-size: 20px;
+            margin: 10px 20px;
+            padding: 20px;
+            display: block;
+            
+        }
+       #sidenav a:hover{
+        background: blueviolet;
+        transition: 0.4s;
+       }
+      #menuebar{
+        position: fixed;
+       top: 10px;
+       left: 20px;
+       width: 50px;
+        cursor: pointer;
+        border-radius: 500px;
+      
+      }
+      .menue a{display: none;}
+        .Logo{padding-left: 150px;}
+        .text{margin-left: 50px;}
+        .about-left-col{
+            flex-basis: 100%;
+        }
+        .about-left-col img{
+            width: 100%;
+            height: 50%;
+        }
+        .about-right-col{
+            flex-basis: 100%;
+            padding-left: 30px;
+        
+        }
+        .skills-left-col{
+            flex-basis: 100%;
+            
+        }
+        .skills-right-col{
+            flex-basis: 100%;
+        }
+        .progress-div{
+            width: 100%;
+        }
+        progress{
+            width: 80%;
+        }
+        .progress-div p{
+            text-align: justify;
+            font-size: 20px;
+            margin-bottom: 10px;
+            padding-left: 40px;
+        
+        }
+        .services-box {
+            flex-basis: 100%;
+            margin-top: 20px;
+        }
+        .services-box img{
+            width: 60%;
+        }
+        .contact-left-col{
+            flex-basis: 100%;
+        }
+        .contact-right-col{
+            flex-basis: 100%;
+        }
+        
+    }
