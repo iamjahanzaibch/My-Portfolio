@@ -58,3 +58,23 @@ function toggleContent(id) {
         content.style.display = "none";
     }
 }
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("downloadButton").addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent the default behavior of the anchor tag
+        
+        // Assuming your CV file is named "kashif javed cv.pdf" and is located at "C:\Users\USER\Desktop"
+        var cvUrl = "file:///C:/Users/USER/Desktop/kashif%20javed%20cv.pdf";
+        
+        // Create a temporary anchor element
+        var downloadLink = document.createElement("a");
+        downloadLink.href = cvUrl;
+        downloadLink.download = "kashif_javed_cv.pdf"; // Name of the file to be downloaded
+        document.body.appendChild(downloadLink);
+        
+        // Trigger the click event of the anchor link
+        downloadLink.click();
+        
+        // Clean up
+        document.body.removeChild(downloadLink);
+    });
+});
